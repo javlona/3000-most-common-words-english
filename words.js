@@ -1,4 +1,4 @@
-var word =
+var words =
     [
    "abandon", "ability", "able", "abortion", "about", "above", "abroad", "absence", "absolute", "absolutely", "absorb", "abuse", "academic", "accept", "access",
    "accident", "accompany", "accomplish", "according", "account", "accurate", "accuse", "achieve", "achievement", "acid", "acknowledge", "acquire", "across", "act", 
@@ -193,3 +193,19 @@ var word =
    "wrap", "write", "writer", "writing", "wrong", "yard", "yeah", "year", "yell", "yellow", "yes", "yesterday", "yet", "yield", "you", "young", "your", "yours", "yourself", 
    "youth", "zone"
 ]
+
+let randomWord = (length, n=1) => {
+    let result = [];
+
+    for(i = 0; i < words.length; i++) {
+        let randomIndex = Math.floor(Math.random() * words.length)
+        if (words[randomIndex].length == length){
+            console.log(words[randomIndex])
+            break;
+        }
+
+    }
+    
+}
+
+randomWord(3)
